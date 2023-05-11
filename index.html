@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="mode">
+        <i class="fa fa-sun-o"></i>
+        <i class="fa fa-moon-o"></i>
+    </div>
+    <div class="container">
+        <div class="hasil">
+            <input type="text" class="angka" disabled placeholder="0" value="0">
+        </div>
+        <div class="layout">
+            <div class="baris1">
+                <div class="tombol hapus">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+                <input type="text" disabled class="tombol" value="7">
+                <input type="text" disabled class="tombol" value="4">
+                <input type="text" disabled class="tombol" value="1">
+            </div>
+            <div class="baris0">
+                <input type="text" disabled class="tombol" style="color: orange" value="0">
+            </div>
+            <div class="baris2">
+                <input type="text" disabled class="tombol" style="color: rgb(0, 132, 255); font-size: 20px;" value="/">
+                <input type="text" disabled class="tombol" value="8">
+                <input type="text" disabled class="tombol" value="5">
+                <input type="text" disabled class="tombol" value="2">
+            </div>
+            <div class="baris3">
+                <input type="text" disabled class="tombol" style="color: rgb(0, 132, 255)" value="*">
+                <input type="text" disabled class="tombol" value="9">
+                <input type="text" disabled class="tombol" value="6">
+                <input type="text" disabled class="tombol" value="3">
+                <input type="text" disabled class="tombol" value=",">
+            </div>
+            <div class="baris4">
+                <input type="text" disabled class="tombol" value="+" style="color:rgb(0, 132, 255)">
+                <input type="text" disabled class="tombol" value="-" style="color:rgb(0, 132, 255)">
+                <input type="text" disabled class="tombol samadengan" id="smadgn" placeholder="=">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

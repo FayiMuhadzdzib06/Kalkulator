@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: orangered;
+}
+.mode {
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+    background-color: #eee;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .4),
+    inset -5px -5px 2px rgba(255, 255, 255, .7);
+}
+.mode i:nth-child(1){
+    color: orangered;
+}
+.mode i:nth-child(2){
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+.container {
+    width: 380px;
+    height: 600px;
+    margin: 20px auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .05);
+}
+.container .hasil {
+    width: calc(100% - 50px);
+    height: 130px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 30px 30px 15px 15px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, .4),
+    inset -5px -5px 2px rgba(255, 255, 255, .7);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .hasil .angka {
+    font-size: 2em;
+}
+.container .layout {
+    width: calc(100% - 30px);
+    height: 350px;
+    /* border: 1px solid black; */
+    margin: -3px auto 0;
+    display: grid;
+    grid-template-areas: 'baris1 baris2 baris3 baris4'
+                            'angka0 angka0 baris3 baris4';
+    grid-template-columns: 1fr repeat(4);
+    grid-template-rows: 100% 90px;
+}
+.container .layout .baris1 {
+    grid-area: baris1;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tombol {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 3px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .15),
+    -5px -5px 8px 2px rgba(255, 255, 255, 1),
+    inset 2px 2px 3px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.container .layout .baris1 .tombol {
+    padding: 0;
+}
+.container .layout .baris1 .tombol i {
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(235, 29, 29);
+}
+.container .layout .baris0 {
+    grid-area: angka0;
+    /* border: 1px solid black; */
+}
+.container .layout .baris0 .tombol {
+    width: calc(100% - 40px);
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .15),
+    -5px -5px 8px 2px rgba(255, 255, 255, 1),
+    inset 2px 2px 3px rgba(0, 0, 0, .1);
+    margin: 5px 0 0 10px;
+}
+.container .layout .baris2 {
+    grid-area: baris2;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.container .layout .baris3 {
+    grid-area: baris3;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px 5px 0;
+}
+.container .layout .baris4 {
+    grid-area: baris4;
+    /* border: 1px solid black; */
+    padding-right: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.samadengan {
+    height: 230px;
+}
+.samadengan::placeholder {
+    color: rgb(0, 255, 0);
+}
+.angka {
+    width: calc(100% - 10px);
+    text-align: end;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+/* dark mode */
+.dark {
+    background-color:  #373737;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        transform: scale(.9);
+        margin: 0 auto;
+    }
+    .mode {
+        margin: 20px auto 0;
+    }
+}
