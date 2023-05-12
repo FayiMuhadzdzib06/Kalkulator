@@ -152,7 +152,7 @@ body{
 }
 @media screen and (max-width: 600px) {
     .container {
-        transform: scale(.9);
+        transform: scale(.7);
         margin: 0 auto;
     }
     .mode {
