@@ -33,7 +33,7 @@ mode.addEventListener('click', function(e){
         container.setAttribute('id', 'dark');
         hasil.setAttribute('id', 'dark-hasil');
         mode.setAttribute('id', 'dark-mode');
-        clear.setAttribute('id', 'dark-tombol');
+        clear.setAttribute('id', 'dark-clear');
         for(var i = 0; i < tombol.length; i++){
             tombol[i].setAttribute('id', 'dark-tombol');
         }
@@ -48,7 +48,7 @@ mode.addEventListener('click', function(e){
         container.removeAttribute('id', 'dark');
         hasil.removeAttribute('id', 'dark-hasil');
         mode.removeAttribute('id', 'dark-mode');
-        clear.removeAttribute('id', 'dark-tombol');
+        clear.removeAttribute('id', 'dark-clear');
         for(var i = 0; i < tombol.length; i++){
             tombol[i].removeAttribute('id', 'dark-tombol');
         }
